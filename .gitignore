@@ -175,5 +175,4 @@ cython_debug/
 
 #pycharm
 .idea/
-
-.md
+*.md
