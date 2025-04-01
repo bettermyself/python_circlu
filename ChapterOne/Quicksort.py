@@ -47,4 +47,13 @@
 # print(max_num([1, 2, 3, 4, 7]))
 
 
+def quick_sort(arr):
+    if len(arr)<2:  #基线条件
+        return arr
+    else:
+        pivot = arr[0]  #递归条件
+        less = [i for i in arr if i < pivot] #Q&C
+        greater = [i for i in arr if i > pivot]
+        return quick_sort(less)+[pivot]+quick_sort(greater)
 
+print(quick_sort([10,5,2,3]))
